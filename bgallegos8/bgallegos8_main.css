@@ -1,0 +1,122 @@
+header {
+    /* text styles */
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Palanquin Dark', sans-serif; */
+    /* font-family: 'Averia Sans Libre', sans-serif; */
+    text-align: center;
+    background-color: white;
+
+    /* background photo */
+    /* background-image: url(/graphics/pexels-eberhard-grossgasteiger-12527029.jpg);
+    /* title add:Photo by eberhard grossgasteiger: https://www.pexels.com/photo/drone-shot-of-foggy-mountains-during-sunset-12527029/ */
+    /* background-color: #cccccc;
+    background-position: bottom; */
+}
+
+nav {
+    border-style: solid;
+    border-color: rgb(72, 72, 174);
+    border-width: 5px;
+}
+
+nav,
+.nav_bar {
+    /* flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    /* text styles */
+    background-color: rgb(125, 173, 239);
+    font-weight: bold;
+    color: azure;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+
+}
+
+body {
+    background-color: rgb(184, 207, 238);
+}
+
+.main_ben_photo {
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 10px;
+    margin: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.main_para1 {
+    /* positioning */
+    position: center;
+    top: 25%;
+
+    /* text edits */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+}
+
+.main_parent1 {
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
+}
+
+.coding_header {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.coding_images {
+    width: 800px;
+    height: auto;
+    border-style: solid;
+    border-width: medium;
+    border-color: black;
+}
+
+.coding_list {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+}
+
+.coding_parent1 {
+
+    align-items: center;
+    color: rgb(146, 17, 137);
+}
+
+.coding_parent2 {
+    flex-wrap: wrap;
+}
+
+.coding_para1 {
+    /* positioning */
+    position: center;
+
+    /* text edits */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+}
+
+.coding_div {
+    flex-wrap: wrap;
+}
