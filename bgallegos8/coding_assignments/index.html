@@ -35,7 +35,16 @@
         </div>
 
         <div class="nav_bar">
-            <a href="./../coding_assignments/index.html">CODING ASSINGMENTS</a>
+            <div class="dropdown">
+                <a href="./../coding_assignments/index.html">CODING ASSINGMENTS</a>
+                <div class="dropdown_content">
+                    <a href="#">Introduction to Computer Programming Section</a>
+                    <br>
+                    <a href="#">Beginning Web Programming Section</a>
+                    <br>
+                    <a href="#">Personal Projects Section</a>
+                </div>
+            </div>
         </div>
 
         <div class="nav_bar">
@@ -44,78 +53,74 @@
     </nav>
 
     <main>
-    <div class="coding_div">
+    <div class="coding_div1">
         <!-- Computer Science Project 3 -->
-        <div>
+        <!-- <div> -->
             <h3 class="coding_header"><u>Introduction to Computer Programming</u></h3>
             <a
                 href="https://www.cpp.sh/?source=%23include+%3Ciostream%3E%0A%23include+%3Ciomanip%3E%0A%23include+%3Cstring%3E%0Ausing+namespace+std%3B%0A%0Aint+main()%0A%7B%0A++++string+month1%3B%2F%2F+Defines+each+month%0A++++string+month2%3B%0A++++string+month3%3B%0A++++float+rain_month1%3B%2F%2F+Defines+rain+in+each+month%0A++++float+rain_month2%3B%0A++++float+rain_month3%3B%0A++++float+average_rain%3B%0A++++%0A++++%0A++++%2F%2FInput+and+Output+Start%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2FMonth+%231%0A++++cin+%3E%3E+month1%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month1%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%232%0A++++cin+%3E%3E+month2%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month2+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month2%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%233%0A++++cin+%3E%3E+month3%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month3+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month3%3B%0A++++%0A++++%2F%2FCalculations%0A++++average_rain+%3D+(rain_month1+%2B+rain_month2+%2B+rain_month3)%2F3%3B%0A++++%0A++++%2F%2FOutput+after+Calculations+Section%0A++++cout+%3C%3C+setprecision(2)+%3C%3C+fixed+%3C%3C+%22The+average+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%2C+%22+%3C%3C+month2+%3C%3C+%22%2C+%22+%3C%3C+%22and+%22+%3C%3C+month3+%3C%3C+%22+is+%22+%3C%3C+average_rain+%3C%3C+%22+inches.%22%3B%0A++++%0A++++return+0%3B+%0A%7D%0A++++%0A" target="_blank">
                 <img src="./../graphics/c++_project_3.png" alt="C++ Project: Average Rainfall Calculation"
                     class="coding_images" title="C++ Project: Average Rainfall Calculation" href="">
             </a>
-        </div>
-
+        <!-- </div> -->
+    </div>
         <!-- Computer Science Project 3 Description -->
-        <div class="coding_parent1">
-            <span class="coding_para1"><br><br><b>Project #3: Create a program that provides an average of 3 months of
+    <div class="coding_parent1">
+            <span class="coding_para1"><br><b>Project #3: Create a program that provides an average of 3 months of
                     rainfall with input from the user.</b></span>
             <hr>
             <ul class="coding_list">
                 <li>
                     Project assigned to practice string usage in C++
                 </li>
-                <br>
+                <!-- <br> -->
                 <li>
                     Practice using output instruction text and user input
                 </li>
-                <br>
+                <!-- <br> -->
                 <li>
                     Practice using calculation from user input and output the result in the program
                 </li>
-
-                <p><a href="https://www.cpp.sh/?source=%23include+%3Ciostream%3E%0A%23include+%3Ciomanip%3E%0A%23include+%3Cstring%3E%0Ausing+namespace+std%3B%0A%0Aint+main()%0A%7B%0A++++string+month1%3B%2F%2F+Defines+each+month%0A++++string+month2%3B%0A++++string+month3%3B%0A++++float+rain_month1%3B%2F%2F+Defines+rain+in+each+month%0A++++float+rain_month2%3B%0A++++float+rain_month3%3B%0A++++float+average_rain%3B%0A++++%0A++++%0A++++%2F%2FInput+and+Output+Start%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2FMonth+%231%0A++++cin+%3E%3E+month1%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month1%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%232%0A++++cin+%3E%3E+month2%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month2+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month2%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%233%0A++++cin+%3E%3E+month3%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month3+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month3%3B%0A++++%0A++++%2F%2FCalculations%0A++++average_rain+%3D+(rain_month1+%2B+rain_month2+%2B+rain_month3)%2F3%3B%0A++++%0A++++%2F%2FOutput+after+Calculations+Section%0A++++cout+%3C%3C+setprecision(2)+%3C%3C+fixed+%3C%3C+%22The+average+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%2C+%22+%3C%3C+month2+%3C%3C+%22%2C+%22+%3C%3C+%22and+%22+%3C%3C+month3+%3C%3C+%22+is+%22+%3C%3C+average_rain+%3C%3C+%22+inches.%22%3B%0A++++%0A++++return+0%3B+%0A%7D%0A++++%0A"
-                        target="_blank">Click Here</a> to View Code in Online Compiler, C++ Shell</p>
+                <br>
+                <span><a href="https://www.cpp.sh/?source=%23include+%3Ciostream%3E%0A%23include+%3Ciomanip%3E%0A%23include+%3Cstring%3E%0Ausing+namespace+std%3B%0A%0Aint+main()%0A%7B%0A++++string+month1%3B%2F%2F+Defines+each+month%0A++++string+month2%3B%0A++++string+month3%3B%0A++++float+rain_month1%3B%2F%2F+Defines+rain+in+each+month%0A++++float+rain_month2%3B%0A++++float+rain_month3%3B%0A++++float+average_rain%3B%0A++++%0A++++%0A++++%2F%2FInput+and+Output+Start%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2FMonth+%231%0A++++cin+%3E%3E+month1%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month1%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%232%0A++++cin+%3E%3E+month2%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month2+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month2%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%233%0A++++cin+%3E%3E+month3%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month3+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month3%3B%0A++++%0A++++%2F%2FCalculations%0A++++average_rain+%3D+(rain_month1+%2B+rain_month2+%2B+rain_month3)%2F3%3B%0A++++%0A++++%2F%2FOutput+after+Calculations+Section%0A++++cout+%3C%3C+setprecision(2)+%3C%3C+fixed+%3C%3C+%22The+average+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%2C+%22+%3C%3C+month2+%3C%3C+%22%2C+%22+%3C%3C+%22and+%22+%3C%3C+month3+%3C%3C+%22+is+%22+%3C%3C+average_rain+%3C%3C+%22+inches.%22%3B%0A++++%0A++++return+0%3B+%0A%7D%0A++++%0A"
+                        target="_blank">Click Here</a> to View Code in Online Compiler, C++ Shell</span>
 
             </ul>
 
-        </div>
     </div>
 
-    <div class="coding_div">
-        <!-- Computer Science Project 7 -->
-        <div class="coding_parent2">
+    <!-- Computer Science Project 3 -->
+    <div class="coding_div2">
             <h3 class="coding_header"><u>Introduction to Computer Programming</u></h3>
             <a
                 href="https://www.cpp.sh/?source=%23include+%3Ciostream%3E%0A%23include+%3Ciomanip%3E%0A%23include+%3Cstring%3E%0Ausing+namespace+std%3B%0A%0Aint+main()%0A%7B%0A++++string+month1%3B%2F%2F+Defines+each+month%0A++++string+month2%3B%0A++++string+month3%3B%0A++++float+rain_month1%3B%2F%2F+Defines+rain+in+each+month%0A++++float+rain_month2%3B%0A++++float+rain_month3%3B%0A++++float+average_rain%3B%0A++++%0A++++%0A++++%2F%2FInput+and+Output+Start%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2FMonth+%231%0A++++cin+%3E%3E+month1%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month1%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%232%0A++++cin+%3E%3E+month2%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month2+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month2%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%233%0A++++cin+%3E%3E+month3%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month3+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month3%3B%0A++++%0A++++%2F%2FCalculations%0A++++average_rain+%3D+(rain_month1+%2B+rain_month2+%2B+rain_month3)%2F3%3B%0A++++%0A++++%2F%2FOutput+after+Calculations+Section%0A++++cout+%3C%3C+setprecision(2)+%3C%3C+fixed+%3C%3C+%22The+average+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%2C+%22+%3C%3C+month2+%3C%3C+%22%2C+%22+%3C%3C+%22and+%22+%3C%3C+month3+%3C%3C+%22+is+%22+%3C%3C+average_rain+%3C%3C+%22+inches.%22%3B%0A++++%0A++++return+0%3B+%0A%7D%0A++++%0A" target="_blank">
                 <img src="./../graphics/c++_project_3.png" alt="C++ Project: Average Rainfall Calculation"
                     class="coding_images" title="C++ Project: Average Rainfall Calculation" href="">
             </a>
-        </div>
-
-        <!-- Computer Science Project 7 Description -->
-        <div class="coding_parent2">
-            <span class="coding_para1"><br><br><b>Project #3: Create a program that provides an average of 3 months of
+    </div>
+        <!-- Computer Science Project 3 Description -->
+    <div class="coding_parent2">
+            <span class="coding_para1"><br><b>Project #3: Create a program that provides an average of 3 months of
                     rainfall with input from the user.</b></span>
             <hr>
             <ul class="coding_list">
                 <li>
                     Project assigned to practice string usage in C++
                 </li>
-                <br>
+                <!-- <br> -->
                 <li>
                     Practice using output instruction text and user input
                 </li>
-                <br>
+                <!-- <br> -->
                 <li>
                     Practice using calculation from user input and output the result in the program
                 </li>
-
-                <p><a href="https://www.cpp.sh/?source=%23include+%3Ciostream%3E%0A%23include+%3Ciomanip%3E%0A%23include+%3Cstring%3E%0Ausing+namespace+std%3B%0A%0Aint+main()%0A%7B%0A++++string+month1%3B%2F%2F+Defines+each+month%0A++++string+month2%3B%0A++++string+month3%3B%0A++++float+rain_month1%3B%2F%2F+Defines+rain+in+each+month%0A++++float+rain_month2%3B%0A++++float+rain_month3%3B%0A++++float+average_rain%3B%0A++++%0A++++%0A++++%2F%2FInput+and+Output+Start%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2FMonth+%231%0A++++cin+%3E%3E+month1%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month1%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%232%0A++++cin+%3E%3E+month2%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month2+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month2%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%233%0A++++cin+%3E%3E+month3%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month3+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month3%3B%0A++++%0A++++%2F%2FCalculations%0A++++average_rain+%3D+(rain_month1+%2B+rain_month2+%2B+rain_month3)%2F3%3B%0A++++%0A++++%2F%2FOutput+after+Calculations+Section%0A++++cout+%3C%3C+setprecision(2)+%3C%3C+fixed+%3C%3C+%22The+average+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%2C+%22+%3C%3C+month2+%3C%3C+%22%2C+%22+%3C%3C+%22and+%22+%3C%3C+month3+%3C%3C+%22+is+%22+%3C%3C+average_rain+%3C%3C+%22+inches.%22%3B%0A++++%0A++++return+0%3B+%0A%7D%0A++++%0A"
-                        target="_blank">Click Here</a> to View Code in Online Compiler, C++ Shell</p>
+                <br>
+                <span><a href="https://www.cpp.sh/?source=%23include+%3Ciostream%3E%0A%23include+%3Ciomanip%3E%0A%23include+%3Cstring%3E%0Ausing+namespace+std%3B%0A%0Aint+main()%0A%7B%0A++++string+month1%3B%2F%2F+Defines+each+month%0A++++string+month2%3B%0A++++string+month3%3B%0A++++float+rain_month1%3B%2F%2F+Defines+rain+in+each+month%0A++++float+rain_month2%3B%0A++++float+rain_month3%3B%0A++++float+average_rain%3B%0A++++%0A++++%0A++++%2F%2FInput+and+Output+Start%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2FMonth+%231%0A++++cin+%3E%3E+month1%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month1%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%232%0A++++cin+%3E%3E+month2%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month2+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month2%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%233%0A++++cin+%3E%3E+month3%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month3+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month3%3B%0A++++%0A++++%2F%2FCalculations%0A++++average_rain+%3D+(rain_month1+%2B+rain_month2+%2B+rain_month3)%2F3%3B%0A++++%0A++++%2F%2FOutput+after+Calculations+Section%0A++++cout+%3C%3C+setprecision(2)+%3C%3C+fixed+%3C%3C+%22The+average+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%2C+%22+%3C%3C+month2+%3C%3C+%22%2C+%22+%3C%3C+%22and+%22+%3C%3C+month3+%3C%3C+%22+is+%22+%3C%3C+average_rain+%3C%3C+%22+inches.%22%3B%0A++++%0A++++return+0%3B+%0A%7D%0A++++%0A"
+                        target="_blank">Click Here</a> to View Code in Online Compiler, C++ Shell</span>
 
             </ul>
 
-        </div>
     </div>
     </main>
 
