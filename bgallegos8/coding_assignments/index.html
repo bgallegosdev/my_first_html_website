@@ -12,9 +12,9 @@
 
 <body>
 
-    <header>
-        <h1>BENJAMIN GALLEGOS WEBSITE</h1>
-        <h2>Coding Assignments Page</h2>
+    <header id="coding_header">
+        <h1 class="coding_header_text">BENJAMIN GALLEGOS WEBSITE</h1>
+        <h2 class="coding_header_text">Coding Assignments Page</h2>
     </header>
 
     <nav>
@@ -71,15 +71,15 @@
             <hr>
             <ul class="coding_list">
                 <li>
-                    Project assigned to practice string usage in C++
+                    Project assigned to practice <b class="keywords">string usage</b> in C++
                 </li>
                 <!-- <br> -->
                 <li>
-                    Practice using output instruction text and user input
+                    Practice using <b class="keywords">output</b> instruction text and <b class="keywords">user input</b>
                 </li>
                 <!-- <br> -->
                 <li>
-                    Practice using calculation from user input and output the result in the program
+                    Practice using main function for <b class="keywords">calculation</b> from user input and output the result in the program
                 </li>
                 <br>
                 <span><a href="https://www.cpp.sh/?source=%23include+%3Ciostream%3E%0A%23include+%3Ciomanip%3E%0A%23include+%3Cstring%3E%0Ausing+namespace+std%3B%0A%0Aint+main()%0A%7B%0A++++string+month1%3B%2F%2F+Defines+each+month%0A++++string+month2%3B%0A++++string+month3%3B%0A++++float+rain_month1%3B%2F%2F+Defines+rain+in+each+month%0A++++float+rain_month2%3B%0A++++float+rain_month3%3B%0A++++float+average_rain%3B%0A++++%0A++++%0A++++%2F%2FInput+and+Output+Start%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2FMonth+%231%0A++++cin+%3E%3E+month1%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month1%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%232%0A++++cin+%3E%3E+month2%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month2+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month2%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%233%0A++++cin+%3E%3E+month3%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month3+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month3%3B%0A++++%0A++++%2F%2FCalculations%0A++++average_rain+%3D+(rain_month1+%2B+rain_month2+%2B+rain_month3)%2F3%3B%0A++++%0A++++%2F%2FOutput+after+Calculations+Section%0A++++cout+%3C%3C+setprecision(2)+%3C%3C+fixed+%3C%3C+%22The+average+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%2C+%22+%3C%3C+month2+%3C%3C+%22%2C+%22+%3C%3C+%22and+%22+%3C%3C+month3+%3C%3C+%22+is+%22+%3C%3C+average_rain+%3C%3C+%22+inches.%22%3B%0A++++%0A++++return+0%3B+%0A%7D%0A++++%0A"
@@ -89,40 +89,102 @@
 
     </div>
 
-    <!-- Computer Science Project 3 -->
+    <!-- Computer Science Project 5 -->
     <div class="coding_div2">
             <h3 class="coding_header"><u>Introduction to Computer Programming</u></h3>
-            <a
-                href="https://www.cpp.sh/?source=%23include+%3Ciostream%3E%0A%23include+%3Ciomanip%3E%0A%23include+%3Cstring%3E%0Ausing+namespace+std%3B%0A%0Aint+main()%0A%7B%0A++++string+month1%3B%2F%2F+Defines+each+month%0A++++string+month2%3B%0A++++string+month3%3B%0A++++float+rain_month1%3B%2F%2F+Defines+rain+in+each+month%0A++++float+rain_month2%3B%0A++++float+rain_month3%3B%0A++++float+average_rain%3B%0A++++%0A++++%0A++++%2F%2FInput+and+Output+Start%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2FMonth+%231%0A++++cin+%3E%3E+month1%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month1%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%232%0A++++cin+%3E%3E+month2%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month2+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month2%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%233%0A++++cin+%3E%3E+month3%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month3+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month3%3B%0A++++%0A++++%2F%2FCalculations%0A++++average_rain+%3D+(rain_month1+%2B+rain_month2+%2B+rain_month3)%2F3%3B%0A++++%0A++++%2F%2FOutput+after+Calculations+Section%0A++++cout+%3C%3C+setprecision(2)+%3C%3C+fixed+%3C%3C+%22The+average+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%2C+%22+%3C%3C+month2+%3C%3C+%22%2C+%22+%3C%3C+%22and+%22+%3C%3C+month3+%3C%3C+%22+is+%22+%3C%3C+average_rain+%3C%3C+%22+inches.%22%3B%0A++++%0A++++return+0%3B+%0A%7D%0A++++%0A" target="_blank">
-                <img src="./../graphics/c++_project_3.png" alt="C++ Project: Average Rainfall Calculation"
-                    class="coding_images" title="C++ Project: Average Rainfall Calculation" href="">
+            <a href="https://www.onlinegdb.com/URy0xT8fA" target="_blank">
+                <img src="./../graphics/c++_project_5_cropped.png" alt="C++ Project: Average Rainfall Calculation"
+                    class="coding_images" title="C++ Project: Using inputFile & Average Calculations">
             </a>
     </div>
-        <!-- Computer Science Project 3 Description -->
+        <!-- Computer Science Project 5 Description -->
     <div class="coding_parent2">
-            <span class="coding_para1"><br><b>Project #3: Create a program that provides an average of 3 months of
-                    rainfall with input from the user.</b></span>
+            <span class="coding_para1"><br><b>Project #5: Create a program that opens a file, reads all the numbers from the file, and calculates: numbers in the file, sum of all the numbers in the file, and average of all the numbers.</b></span>
             <hr>
             <ul class="coding_list">
                 <li>
-                    Project assigned to practice string usage in C++
-                </li>
-                <!-- <br> -->
-                <li>
-                    Practice using output instruction text and user input
-                </li>
-                <!-- <br> -->
-                <li>
-                    Practice using calculation from user input and output the result in the program
+                    Studying the usage of <b class="keywords">inputFile</b> and <b class="keywords">outputFile</b>. Proper code to open and close files in C++.
                 </li>
                 <br>
-                <span><a href="https://www.cpp.sh/?source=%23include+%3Ciostream%3E%0A%23include+%3Ciomanip%3E%0A%23include+%3Cstring%3E%0Ausing+namespace+std%3B%0A%0Aint+main()%0A%7B%0A++++string+month1%3B%2F%2F+Defines+each+month%0A++++string+month2%3B%0A++++string+month3%3B%0A++++float+rain_month1%3B%2F%2F+Defines+rain+in+each+month%0A++++float+rain_month2%3B%0A++++float+rain_month3%3B%0A++++float+average_rain%3B%0A++++%0A++++%0A++++%2F%2FInput+and+Output+Start%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2FMonth+%231%0A++++cin+%3E%3E+month1%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month1%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%232%0A++++cin+%3E%3E+month2%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month2+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month2%3B%0A++++cout+%3C%3C+%22Enter+month%3A+%22%3B%2F%2F+Month+%233%0A++++cin+%3E%3E+month3%3B%0A++++cout+%3C%3C+%22Enter+rainfall+for+%22+%3C%3C+month3+%3C%3C+%22%3A+%22%3B%0A++++cin+%3E%3E+rain_month3%3B%0A++++%0A++++%2F%2FCalculations%0A++++average_rain+%3D+(rain_month1+%2B+rain_month2+%2B+rain_month3)%2F3%3B%0A++++%0A++++%2F%2FOutput+after+Calculations+Section%0A++++cout+%3C%3C+setprecision(2)+%3C%3C+fixed+%3C%3C+%22The+average+rainfall+for+%22+%3C%3C+month1+%3C%3C+%22%2C+%22+%3C%3C+month2+%3C%3C+%22%2C+%22+%3C%3C+%22and+%22+%3C%3C+month3+%3C%3C+%22+is+%22+%3C%3C+average_rain+%3C%3C+%22+inches.%22%3B%0A++++%0A++++return+0%3B+%0A%7D%0A++++%0A"
-                        target="_blank">Click Here</a> to View Code in Online Compiler, C++ Shell</span>
+                <li>
+                    Using <b class="keywords">while loops</b> to process data from a file.
+                </li>
+                <br>
+                <li>
+                    Practice on proper <b class="keywords">definitions</b> and <b class="keywords">initializations</b>.
+                </li>
+                <br>
+                <span><a href="https://www.onlinegdb.com/URy0xT8fA"
+                        target="_blank">Click Here</a> to View Code in Online Compiler, GDB online Debugger</span>
 
             </ul>
 
     </div>
+
+       <!-- Computer Science Project 7 -->
+    <div class="coding_div3">
+        <h3 class="coding_header"><u>Introduction to Computer Programming</u></h3>
+        <a href="https://www.onlinegdb.com/fork/UkNuMhznS" target="_blank">
+            <img src="./../graphics/c++_project_7.png" alt="C++ Project: Average Rainfall Calculation Using Arrays and Functions Other Than Main"
+                class="coding_images" title="C++ Project: Using Array Data, Functions Outside of Main, and For Loops">
+        </a>
+    </div>
+    <!-- Computer Science Project 7 Description -->
+    <div class="coding_parent3">
+            <span class="coding_para1"><br><b>Project #7: Create a program that asks the user for average rain fall from January to December, store that data, and use functions outside of main to calculate the average rainfall for the user. Program must use for loops to address array data. It must also output the lowest and highest month of rain.</b></span>
+        <hr>
+        <ul class="coding_list">
+            <li>
+                Building and calling <b class="keywords">functions outside of main</b>. Using outside functions for calculations and other processing and <b class="keywords">returning data</b> back to main for proper output.
+            </li>
+            <br>
+            <li>
+                Practice <b class="keywords">storing data in an array</b> and using that data for calculations.
+            </li>
+            <br>
+            <li>
+                Using a <b class="keywords">for loop</b> to process data inside of an array.
+            </li>
+            <br>
+            <span><a href="https://www.onlinegdb.com/fork/UkNuMhznS"
+                    target="_blank">Click Here</a> to View Code in Online Compiler, GDB online Debugger</span>
+
+        </ul>
+
+    </div>
     </main>
+
+    <!-- Footer Start -->
+    <footer>
+        <!-- Socials with Icons -->
+        <div class="socials">
+            <a href="https://www.facebook.com/benjamin.gallegos.921/" target="_blank">
+                <img src="../graphics/facebook.256x256.png" alt="facebook icon" class="icons"
+                    title="Benjamin Gallegos Facebook Account">
+                <span><a href="https://www.facebook.com/benjamin.gallegos.921/" target="_blank">My Facebook
+                        Page</a></span>
+            </a>
+
+            <!-- Spacing between social icons -->
+            &nbsp;&nbsp;&nbsp;
+
+            <a href="https://www.instagram.com/_bengallegos/" target="_blank">
+                <img src="../graphics/instagram.256x256.png" alt="instagram icon" class="icons"
+                    title="Benjamin Gallegos Instagram Account">
+                <span><a href="https://www.instagram.com/_bengallegos/" target="_blank">My Instagram</a></span>
+            </a>
+
+            &nbsp;&nbsp;&nbsp;
+
+            <a href="https://www.linkedin.com/in/benjamin-gallegos-9445b3290/" target="_blank">
+                <img src="../graphics/linkedin-original.256x256.png" alt="linkedin icon" class="icons"
+                    title="Benjamin Gallegos LinkedIn Account">
+                <span><a href="https://www.linkedin.com/in/benjamin-gallegos-9445b3290/" target="_blank">My
+                        LinkedIn</a></span>
+            </a>
+
+        </div>
+    </footer>
 
 </body>
 

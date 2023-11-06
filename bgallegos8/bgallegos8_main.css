@@ -14,6 +14,16 @@ header {
     background-position: bottom; */
 }
 
+#coding_header {
+    background-image: url(/bgallegos8/graphics/pexels-pixabay-270366.jpg);
+    /* Photo by Pixabay: https://www.pexels.com/photo/html-code-270366/ */
+}
+
+.coding_header_text {
+    color: rgb(0, 181, 9);
+    text-shadow: 2px 2px 0px yellow;
+}
+
 nav {
     border-style: solid;
     border-color: rgb(72, 72, 174);
@@ -118,6 +128,10 @@ main {
     order: 5;
 }
 
+.coding_div3 {
+    order: 6;
+}
+
 .coding_parent1 {
     /* width: 50%;
     color: rgb(252, 0, 0); */
@@ -141,6 +155,24 @@ main {
     color: rgb(252, 0, 0); */
 
     order: 4;
+    /* flex-wrap: wrap; */
+    width: 50%;
+    /* margin: auto; */
+    /* background: #f2f2f2; */
+    padding: 25px 25px 25px 25px;
+    /* box-shadow: 0.1rem 0.1rem 0.2rem 0 rgb(0 0 0 / 40%); */
+    font-size: 1rem;
+    /* min-height: 100px; */
+    /* border-width: 1px;
+        border-style: solid;
+        border-color: rgba(127, 127, 127, 1); */
+}
+
+.coding_parent3 {
+    /* width: 50%;
+    color: rgb(252, 0, 0); */
+
+    order: 7;
     /* flex-wrap: wrap; */
     width: 50%;
     /* margin: auto; */
@@ -186,4 +218,9 @@ main {
 
 .dropdown_content a:hover {
     background-color: rgb(168, 172, 175);
+}
+
+.keywords {
+    color: red;
+    background-color: yellow;
 }
