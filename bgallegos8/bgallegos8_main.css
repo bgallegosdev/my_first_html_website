@@ -15,7 +15,7 @@ header {
 }
 
 #coding_header {
-    background-image: url(/bgallegos8/graphics/pexels-pixabay-270366.jpg);
+    background-image: url(../bgallegos8/graphics/pexels-pixabay-270366.jpg);
     /* Photo by Pixabay: https://www.pexels.com/photo/html-code-270366/ */
 }
 
@@ -132,6 +132,13 @@ main {
     order: 6;
 }
 
+#coding_div4 {
+    order: 7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+
+}
+
 .coding_parent1 {
     /* width: 50%;
     color: rgb(252, 0, 0); */
@@ -223,4 +230,9 @@ main {
 .keywords {
     color: red;
     background-color: yellow;
+}
+
+a:link {
+    text-decoration: none;
+    font-weight: bold;
 }

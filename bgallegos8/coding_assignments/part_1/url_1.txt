@@ -1,0 +1,11 @@
+file:///
+C:/Users/admin/Documents/2023/College/beginning_web_programming/part_1/index_1.7.html
+?
+f_name=Benjamin
+&
+l_name=Gallegos
+&
+age=27
+&
+password=test
+#

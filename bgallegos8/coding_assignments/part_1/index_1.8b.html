@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Name: Benjamin Gallegos -->
+<!-- Course: ITSE-1311.001 -->
+<!-- Assignment: index_1.8b.html -->
+<!-- Date: November 14, 2023 -->
+<!-- Topic: Input Range Type -->
+<!-- CDN -- responsive design and + in selection -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Range Control</title>
+    <style>
+        input { font-size: 4em; 
+                background-color: lightgray;}
+
+        input[type="range"]
+                { width: 50%; }
+    </style>
+    <!-- first call to Javascript -->
+    <script>
+        function updateRange(val) {
+            document.getElementById("output").value=val;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Input Range Control</h1>
+        <hr>
+    </header>
+    <br>
+    <input type="range" 
+            id="range_1" 
+            name="a_range" 
+            min="0" 
+            max="1000" 
+            step="37" 
+            value="200"
+            onchange = "updateRange(this.value);">
+            <!-- Javascript call in HTML must end in an ';' -->
+    <br>
+    <br>
+    <input type="text" 
+            id="output" 
+            size="4" 
+            value=""
+            placeholder="output">
+    
+
+</body>
+
+</html>

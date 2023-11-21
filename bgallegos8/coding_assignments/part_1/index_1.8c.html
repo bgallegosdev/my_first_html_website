@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- Name: Benjamin Gallegos -->
+<!-- Course: ITSE-1311.001 -->
+<!-- Assignment: index_1.8c.html -->
+<!-- Date: November 19, 2023 -->
+<!-- Topic: Text Type to Range -->
+<!-- CDN -- responsive design and + in selection -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Range Control</title>
+    <style>
+        input { font-size: 4em; 
+                background-color: lightgray;}
+
+        input[type="range"]
+                { width: 50%; }
+    </style>
+    <!-- first call to Javascript -->
+    <script>
+        function updateRange(val) {
+            // adding a console log to check for errors, make sure its functioning correctly
+            console.log("val = ",val);
+            document.getElementById("output").value=val;
+        }
+
+        // second call for Javascript to go the other way, by inputing a value by text 
+        function updateText(val2) {
+            console.log("val2 = ",val2);
+            document.getElementById("range_1").value=val2;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Input Range Control</h1>
+        <hr>
+    </header>
+    <br>
+    <input type="range" 
+            id="range_1" 
+            name="a_range" 
+            min="0" 
+            max="1000" 
+            step="37" 
+            value="200"
+            onchange = "updateRange(this.value);">
+            <!-- Javascript call in HTML must end in an ';' -->
+    <br>
+    <br>
+    <input type="text" 
+            id="output" 
+            size="4" 
+            value=""
+            placeholder="output"
+            onchange="updateText(this.value);">
+    <br>
+    <br>
+    <!-- using this tag contains text that is preformatted -->
+    <!-- preserves both spaces and line breaks -->
+    <pre>
+        I am here on this day,
+        got no video when I say,
+        here I am ... all alone,
+        saying hello ... 
+    </pre>
+
+    
+
+</body>
+
+</html>

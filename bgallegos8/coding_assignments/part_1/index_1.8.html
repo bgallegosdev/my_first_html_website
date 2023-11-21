@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- Name: Benjamin Gallegos -->
+<!-- Course: ITSE-1311.001 -->
+<!-- Assignment: index_1.8.html -->
+<!-- Date: October 11, 2023 -->
+<!-- Topic: Form Controls -->
+<!-- CDN -- responsive design and + in selection -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <style>
+        fieldset,
+        legend,
+        textarea {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Pizza Order Form</h1>
+        <hr>
+    </header>
+    <div>
+        <form action="#" method="GET" name="inputForm" id="inputForm">
+            <fieldset>
+                <legend>Pizza Selection</legend>
+
+                Pepporoni <input type="checkbox" name="topping" value="pep" checked> <br>
+                Onion <input type="checkbox" name="topping" value="onion"> <br>
+                Cheese <input type="checkbox" name="topping" value="cheese"> <br>
+
+                <br>
+
+                Thin Crust <input type="radio" name="crust" value="thin" checked> <br>
+                Thick Crust <input type="radio" name="crust" value="thick"> <br>
+                NO Crust <input type="radio" name="crust" value="none"> <br>
+                <br>
+                <textarea name="comments" placeholder="special instructions"></textarea>
+                <br>
+            </fieldset>
+            <input type="submit" value="Submit Form">
+            <input type="reset" value="Reset Form">
+        </form>
+
+    </div>
+</body>
+
+</html>
