@@ -24,6 +24,11 @@ header {
     text-shadow: 2px 2px 0px yellow;
 }
 
+.coding_header {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
 nav {
     border-style: solid;
     border-color: rgb(72, 72, 174);
@@ -47,11 +52,37 @@ nav,
 
     position: relative;
 
+    text-shadow: 2px 2px 4px #0000007c;
+
 }
 
 /* dropdowns on nav */
 .nav_bar:hover .dropdown_content {
     display: block;
+}
+
+/* any unvisited links */
+a:link {
+    color: rgb(79, 26, 225);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* visited link */
+a:visited {
+    color: rgb(87, 9, 129);
+}
+
+/* any hovered link */
+a:hover {
+    color: rgb(24, 24, 184);
+    text-decoration: underline;
+    font-size: 105%;
+}
+
+/* any selected link */
+a:active {
+    color: red;
 }
 
 body {
@@ -63,6 +94,8 @@ body {
     border-color: rgb(255, 255, 255);
     border-width: 10px;
     margin: 20px;
+    box-shadow: 10px 10px 10px grey;
+    
 }
 
 main {
@@ -94,6 +127,8 @@ main {
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
     font-weight: bold;
+
+    text-shadow: 2px 2px 4px #0000007c;
 }
 
 .icons {
@@ -119,6 +154,10 @@ main {
     font-family: 'Courier New', Courier, monospace;
     font-size: 2em;
 }
+.coding_list2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+}
 
 .coding_div1 {
     order: 1;
@@ -137,6 +176,12 @@ main {
     font-family: 'Courier New', Courier, monospace;
     font-size: 2em;
 
+}
+
+.coding_div5 {
+    order: 8;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
 }
 
 .coding_parent1 {
@@ -193,13 +238,20 @@ main {
         border-color: rgba(127, 127, 127, 1); */
 }
 
+.coding_parent4 {
+    order: 9;
+    width: 50%;
+    padding: 25px 25px 25px 25px;
+    font-size: 1rem;
+}
+
 .coding_para1 {
     /* positioning */
     position: center;
 
     /* text edits */
     font-family: 'Courier New', Courier, monospace;
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 /* dropdown menu */
@@ -223,16 +275,23 @@ main {
     color: rgb(21, 0, 255);
 }
 
+.dropdown_content a:link {
+    color: rgb(79, 26, 225);
+}
+
 .dropdown_content a:hover {
     background-color: rgb(168, 172, 175);
+}
+
+.dropdown_content a:visited {
+    color: rgb(87, 9, 129);
+}
+
+.dropdown_content a:active {
+    color: red;
 }
 
 .keywords {
     color: red;
     background-color: yellow;
-}
-
-a:link {
-    text-decoration: none;
-    font-weight: bold;
 }
