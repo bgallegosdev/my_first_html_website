@@ -1,0 +1,14 @@
+Benjamin Gallegos
+Class: 11/02/2023
+
+Nice Website: https://www.crumbtheband.com/
+Animejs: https://animejs.com/
+D3: https://d3js.org/
+three.js: https://threejs.org/
+Scroll css: https://css-tricks.com/books/greatest-css-tricks/scroll-animation/
+HTML canvas tag: https://www.w3schools.com/html/html5_canvas.asp
+Dropdown Menu: https://www.w3schools.com/howto/howto_css_dropdown.asp
+Cubic-bezier: https://cubic-bezier.com/#.61,1.41,.8,-0.3
+
+Translate: static
+Transform: animation

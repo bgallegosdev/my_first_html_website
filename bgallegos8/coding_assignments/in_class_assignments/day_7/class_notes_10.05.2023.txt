@@ -1,0 +1,34 @@
+Benjamin Gallegos
+ITSE 1301.001
+Date: 10/05/2023
+
+Final project discussion:
+    Work on weekly
+    Started October 1st, 2023
+    Directory suggestions
+
+
+day_7 file
+    reset.css
+        traveled to search "css reset" on google, grabbed code to help us "zero" out the stored data as a reset to the "Clear Tasks" button
+
+library_storage.js
+
+css
+    Selectors - most difficult for beginners
+    * {} - means selecting ALL elements
+
+    (space) {} - picking descendants of Selectors
+
+    four pseudo classes for links
+    a:hover
+    a:click
+    a:active
+    a:...
+
+    a[href^="http://"] - ^ means "starts with"
+
+Inheritance
+    Related items within a object can have inheritance of its' parents
+    instance: paragraph in a blue box, if we change some of the words in the paragraph to have other properties like BOLD or ITALICS, inheritance allows the children, the words affected, to stay within the same style and properties of what the parent has: blue background, same font size, and font color.
+    

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- Name: Benjamin Gallegos
+Date: September 28, 2023
+Course: ITSE-1311.001
+Assignment: In Class -- Loving Flexbox! -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics</title>
+    <style>
+        /* *:hover {
+            transform: rotate(45deg);
+        } */
+
+        body {
+            background-color: #8da7ef;
+        }
+
+        img {
+            width: 200px;
+            /* height: 150px; */
+            border: 5px solid grey;
+            /* border-radius: 7px; */
+        }
+
+        img:hover {
+            transform: scale(150%);
+        }
+
+        div {
+
+            /* float: right; */
+            background-color: #ccf4e2;
+            border-radius: 25px;
+        }
+
+        div p {
+            font-size: 2rem;
+            font-weight: bold;
+
+        }
+
+        div.container {
+            padding: 5px;
+            background-color: rgb(195, 191, 238);
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* With align items */
+            align-items: stretch;
+            /* align-items: flex-start; */
+            /* align-items: center; */
+            /* align-content: center;  */
+            /* then flexwrap */
+
+        }
+
+        div.flexbox-item {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: flex-start; */
+            align-items: center;
+
+            border: 10px solid black;
+            /* border-radius: 7px; */
+            width: 210px;
+            padding: 8px;
+            margin: 20px;
+            /* text-align: center; */
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid red;
+        }
+
+        td {
+            font-size: 2rem;
+        }
+
+        #benjamin_1 {
+            width: 500px;
+        }
+
+        /* #spin:hover {
+            transform: rotate(5turn);
+            
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Random Graphics that are used in our assignments</h1>
+        <hr>
+    </header>
+    <main>
+        <div class="container">
+            <div class="flexbox-item">
+                <p>art1.jpg</p>
+                <img id="spin" src="../../graphics/art1.jpg" alt="art 1 graphic" title="art1.jpg">
+                <p class="innerptag"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis similique
+                    pariatur, sequi qui doloremque nobis corrupti voluptas! Expedita, error architecto?</p>
+            </div>
+            <br>
+
+            <div class="flexbox-item">
+                <p>art2.jpg</p>
+                <img src="../../graphics/art2.jpg" alt="art 2 graphic" title="art2.jpg">
+            </div>
+            <br>
+
+            <div class="flexbox-item">
+                <p>art3.jpg</p>
+                <img src="../../graphics/art3.jpg" alt="art 3 graphic" title="art3.jpg">
+            </div>
+
+            <div class="flexbox-item">
+                <p>art4.jpg</p>
+                <img src="../../graphics/art4.jpg" alt="art 4 graphic" title="art4.jpg">
+            </div>
+            <br>
+
+            <div class="flexbox-item">
+                <p>art5.jpg</p>
+                <img src="../../graphics/art5.jpg" alt="art 5 graphic" title="art5.jpg">
+            </div>
+
+            <br>
+            <div class="flexbox-item">
+                <p>art6.jpg</p>
+                <img src="../../graphics/art6.jpg" alt="art 6 graphic" title="art6.jpg">
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- table>tr>td*2 calculation did not work for me?-->
+
+        <table>
+            <tr>
+                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, vel.</td>
+                <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat rem deserunt quibusdam, fuga illo
+                    ducimus?</td>
+            </tr>
+            <tr>
+                <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, repudiandae.</td>
+                <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam eaque tempore itaque quisquam nam
+                    quaerat.</td>
+            </tr>
+        </table>
+
+        <img id="benjamin_1" src="../../graphics/menu_types.png" alt="menu_types">
+
+
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

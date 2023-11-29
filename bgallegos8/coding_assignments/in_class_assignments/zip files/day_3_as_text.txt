@@ -1,0 +1,50 @@
+<!-- Name: Benjamin Gallegos -->
+<!-- Date: September 07, 2023 -->
+<!-- Course: ITSE 1311.001 -->
+<!-- Assignment: Part 0.18-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+
+    <!--css starts with the style element in the header; said to be in file-->
+    <style>
+        .test2 {
+            color: #13bf1e;
+        }
+
+        #test1 {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav> </nav>
+        <hr>
+
+    </header>
+    <main>
+        <h1 style="color: red ;">Web Development Practice: Benjamin Gallegos</h1>
+
+        <p id="test1" class="test2">Starting to learn about <b>divisions</b> in <strong>HTML</strong></p>
+
+        <p class="test2">Lorem ipsum <i>dolor</i> sit amet <em>consectetur</em> <br> adipisicing elit. Dignissimos,
+            dolor.</p>
+
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <p class="test2">Lorem ipsum dolor sit amet.</p>
+    </main>
+    <footer>
+        &copy; Copyright, 2023 Benjamin Gallegos
+    </footer>
+
+</body>
+
+</html>

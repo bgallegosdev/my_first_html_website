@@ -1,0 +1,22 @@
+Benjamin Gallegos
+Class notes: 10/26/2023
+
+XML - Extensible markup language; categorization of objects into similar categories
+
+DOM - Document Object Model; works with JavaScript
+    However, working with the DOM directly with JavaScript is now outdated. Now it often uses JavaScript Frameworks like nodeJS, React, JQuery
+        Simplify the "clunky" part of HTML, CSS, JavaScript
+
+        JavaScript Frameworks: Angular, React, Vue
+        CSS Frameworks: Bootstrap
+
+Why bundle CSS? 
+    https://www.csszengarden.com/
+
+
+Flexbox is intrinsick sizing 
+
+vs.
+
+Grid
+        

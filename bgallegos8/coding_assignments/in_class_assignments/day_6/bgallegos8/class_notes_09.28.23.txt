@@ -1,0 +1,89 @@
+Benjamin Gallegos - Class Notes
+Date: 09/28/2023
+
+Started talking about node.js
+-more advanced way to work with code
+
+Shorthand notes:
+.. --> directory above
+
+/name
+    /daily
+        /day_6
+            day_6.html
+    /graphics
+        art 1
+        art 2
+        art 3
+
+What grabs the art 1 file?
+    This: "../../graphics/art1.jpg"
+
+Working with divs
+    Working with boxes
+    Putting things inside a container Class
+
+REM vs. EM
+    EM--> relative to the container
+    REM --> relative to the webpage
+
+PNG --> Portable network graphics
+JPEG --> Joint Photographics Export Group
+GIF --> graffics interchangeformat
+Vector --> exact coordinates in a photo, coordinates/equations can change while still providing quality
+SVG --> language, scalable vector graphics
+    GIF --> can be animated
+    PNG --> can be transparent
+
+View > WordWrap: wraps text in the editor to keep it in the editor window rather than extending past the viewable width
+
+3 Steps for Uploading to a Live Server:
+-Our development files 
+-Upload to a shared directory
+-networking person uploads contents to the live server 
+
+table>tr>td*2 --> to make multiple tables in the editor.
+Calculation didn't work for me? Add an extention?
+
+table, tr, td { border : 1px; 
+
+        }
+
+    - selectors of all tr td
+
+<table> tag -- creation of tables for data, good use for ongoing data organization
+
+How to make first-letter larger? CSS called drop-caps
+.has-dropcap:first-letter {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  float: left;
+  font-size: 6rem;
+  line-height: 0.65;
+  margin: 0.1em 0.1em 0.2em 0;
+}
+    "first-letter" is a pseudo-class 
+    Example from StackOverflow: https://stackoverflow.com/questions/70899317/use-css-to-create-a-drop-cap-as-an-image-with-accessibility
+
+
+Menu Icon Types: Hamburger, Kebab, Hot Dog, Fries, etc.
+    Example from Alvarotrigo: https://alvarotrigo.com/blog/hamburger-menu-css/
+
+"tweening": generated automatically in animation, a translation from object to object while changing
+    animation of circle to square
+        Circle to stretched-circle to rounded-square to square
+
+        -Classic Tweens
+        -Shape Tweens
+        -Motion Tweens
+
+        Transform with CSS
+            -Example from MDN Web Docs: https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+
+
+
+Ease in and Ease out functions
+
+inside style '*' selects everything
+
+
+

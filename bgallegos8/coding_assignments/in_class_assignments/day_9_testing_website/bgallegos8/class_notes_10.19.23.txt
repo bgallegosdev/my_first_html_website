@@ -1,0 +1,61 @@
+Benjamin Gallegos
+Class: 10/19/2023
+
+Frontend & Backend
+    Backend
+        Manages the data 
+        Microservices 
+        Data Services
+
+        Example: Ordering on Amazon
+            After clicking Submit Order
+                client computer sends order to server computer
+                backend programming language- turnss computer into a server
+                    Backend Framework: Express JS, Djanga, Ruby, on Rails Java Spring
+                    Package manager: mpm, pip, bundler, mavler
+                    Database: helps us store and manage data, communicates with th back end: SQL, 
+                server saves data on Database
+                response sent back to frontend 
+
+API
+    Application Programming Interface
+        POST
+        GET 
+        PUT
+        DELETE
+
+REST
+    Post = create something
+    Get = Get something
+    Delete = Delete something
+
+IaaS: Infrastructure as a Service
+    
+Paas: Platform as a Service
+
+Saas: Software as a Service
+
+All three are provided by the cloud. 
+
+Primary databases: mySQL, mongoDB, 
+
+Javascript
+    xhr is an xlr object
+
+    //use XMLHttpRequest to make http request to web API, builds an AJAX object
+    const xhr = new XMLHttpRequest();
+
+    new is a type stamp" that types an object 
+
+    XMLHttpRequest(); is a class of predefined functions
+
+
+    AJAX = Asynchronis Javascript and XML
+        Asynchronis = happens independently 
+        Javascript = using Javascript
+        and
+        XML = using XML; now JSON (datastructure that holds data)
+
+    
+
+

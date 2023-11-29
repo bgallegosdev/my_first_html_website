@@ -1,0 +1,27 @@
+Name: Benjamin Gallegos
+Assignment: Class Notes 09/14/2023
+
+In VSC you can have html files the same name in different directories
+
+Can create a style sheet by creating a file with .css file type
+link can connect your html file to the css
+
+Can open settings by Ctrl+,
+Can edit themes
+Can edit font size
+
+
+Flexbox:
+Can organize divs in a file
+display : flex; is flex box that organizes the divs/containers
+
+Can also use Grid:
+
+DNS = Domain Name Service, hosts/creates domain names
+
+directory structure -- image element
+    <img src="../../graphics/art8.jpg" alt="">
+        . == working directory
+        ../ == go up a directory
+
+

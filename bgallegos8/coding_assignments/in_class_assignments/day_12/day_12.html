@@ -1,0 +1,34 @@
+<!-- Name: Benjamin Gallegos -->
+<!-- Course: ITSE 1311.001  -->
+<!-- Date: November 09, 2023 -->
+<!-- Assignment: Part 0.54 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* HTML: <div class="ribbon">Your content</div> */
+.ribbon {
+  --d: .8em; /* the depth */
+  
+  position: absolute;
+  top: 20px;
+  inset-inline: calc(10*var(--d));
+  border-bottom: var(--d) solid #0008;
+  line-height: 4;
+  clip-path: polygon(0 0,75% 0,75% calc(75% - var(--d)),calc(75% - var(--d)) 75%,calc(75% - var(--d)) calc(75% - var(--d)),var(--d) calc(75% - var(--d)),var(--d) 75%,0 calc(75% - var(--d)));
+  background-color: #8ee72e; /* the main color */
+}
+    </style>
+</head>
+
+<body>
+    <div class="ribbon">test</div>
+</body>
+
+</html>
