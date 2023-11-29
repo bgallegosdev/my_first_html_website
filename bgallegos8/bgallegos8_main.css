@@ -6,6 +6,9 @@ header {
     /* font-family: 'Averia Sans Libre', sans-serif; */
     text-align: center;
     background-color: white;
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    padding: 10px 0px 10px;
 
     /* background photo */
     /* background-image: url(/graphics/pexels-eberhard-grossgasteiger-12527029.jpg);
@@ -14,17 +17,40 @@ header {
     background-position: bottom; */
 }
 
+#main_header {
+    background-image: url(../bgallegos8/graphics/pexels-jeremy-müller-6306297.jpg);
+    /* Photo by Jeremy Muller: https://www.pexels.com/photo/galaxy-wallpaper-6306297/ */
+}
+
 #coding_header {
     background-image: url(../bgallegos8/graphics/pexels-pixabay-270366.jpg);
     /* Photo by Pixabay: https://www.pexels.com/photo/html-code-270366/ */
+
+}
+
+#about_header {
+    background-image: url(../bgallegos8/graphics/pexels-min-an-1425146.jpg);
+    /* Photo by Min An: https://www.pexels.com/photo/close-up-photo-of-vintage-typewriter-1425146/  */
+    background-size: cover;
+    background-position: center;
 }
 
 .coding_header_text {
-    color: rgb(0, 181, 9);
-    text-shadow: 2px 2px 0px yellow;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
 }
 
 .coding_header {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.about_header_text {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
+}
+
+.about_header {
     font-size: 2rem;
     text-shadow: 2px 2px 4px #000000;
 }
@@ -33,6 +59,7 @@ nav {
     border-style: solid;
     border-color: rgb(72, 72, 174);
     border-width: 5px;
+    box-shadow: 3px 3px 10px black;
 }
 
 nav,
@@ -85,6 +112,7 @@ a:active {
     color: red;
 }
 
+
 body {
     background-color: rgb(184, 207, 238);
 }
@@ -95,7 +123,22 @@ body {
     border-width: 10px;
     margin: 20px;
     box-shadow: 10px 10px 10px grey;
-    
+}
+
+.main_ben_photo:hover {
+    scale: 105%;
+}
+
+#about_headshot_photo {
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 10px;
+    margin: 20px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+#about_headshot_photo:hover {
+    scale: 105%;
 }
 
 main {
@@ -159,7 +202,7 @@ main {
     font-size: 2rem;
 }
 
-.coding_div1 {
+#coding_div1 {
     order: 1;
 }
 
@@ -178,7 +221,7 @@ main {
 
 }
 
-.coding_div5 {
+#coding_div5 {
     order: 8;
     font-family: 'Courier New', Courier, monospace;
     font-size: 2em;
@@ -294,4 +337,10 @@ main {
 .keywords {
     color: red;
     background-color: yellow;
+}
+
+footer {
+    background-color: rgb(125, 173, 239);
+    padding: 10px;
+    
 }
