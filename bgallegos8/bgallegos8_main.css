@@ -35,12 +35,34 @@ header {
     background-position: center;
 }
 
+#work_header {
+    background-image: url(../bgallegos8/graphics/pexels-pixabay-258947.jpg);
+    /* Photo by Pixabay: https://www.pexels.com/photo/stadium-with-empty-chairs-258947/  */
+    background-size: cover;
+    background-position: center;
+}
+
 .coding_header_text {
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 0px rgb(0, 0, 0);
 }
 
-.coding_header {
+#coding_header {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#work_header {
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.work_header_text {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
+}
+
+#about_header {
     font-size: 2rem;
     text-shadow: 2px 2px 4px #000000;
 }
@@ -48,11 +70,6 @@ header {
 .about_header_text {
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 0px rgb(0, 0, 0);
-}
-
-.about_header {
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px #000000;
 }
 
 nav {
@@ -141,7 +158,26 @@ body {
     scale: 105%;
 }
 
-main {
+
+/* main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+} */
+
+#main_main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#coding_main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#about_main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -411,6 +447,188 @@ main {
 .about_me_descriptions {
     font-size: 2rem;
     text-shadow: 2px 2px 4px #0000007c;
+}
+
+/* work-history css */
+
+.work_title_text {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(149, 1, 1);
+    font-size: 3em;
+    /* padding-left: 20%; */
+    text-align: center;
+    text-shadow: 2px 2px 4px #0000007c;
+}
+
+.work_arrows {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work_text {
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(149, 1, 1);
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px #0000007c;
+}
+
+#work_college {
+    display: flex;
+    background-image: url(./../bgallegos8/graphics/pexels-laura-tancredi-7078712.jpg);
+    /* Photo by Laura Tancredi: https://www.pexels.com/photo/white-textured-abstract-architectural-wavy-wall-7078712/ */
+    background-size: cover;
+    flex-grow: 1;
+    border-radius: 2%;
+    box-shadow: 10px 8px 16px 5px rgba(0, 0, 0, 0.567);
+    flex-wrap: wrap;
+}
+
+#work_college2 {
+    display: flex;
+    background-image: url(./../bgallegos8/graphics/pexels-laura-tancredi-7078502.jpg);
+    /* Photo by Laura Tancredi: https://www.pexels.com/photo/part-of-geometric-building-with-metallic-wall-7078502/ */
+    background-size: cover;
+    flex-grow: 1;
+    border-radius: 2%;
+    box-shadow: 10px 8px 16px 5px rgba(0, 0, 0, 0.567);
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+#work_college3 {
+    display: flex;
+    background-image: url(./../bgallegos8/graphics/pexels-brett-sayles-4857499.jpg);
+    /* Photo by Brett Sayles: https://www.pexels.com/photo/old-brick-wall-with-colorful-paints-in-form-of-rainbow-4857499/ */
+    background-size: cover;
+    flex-grow: 1;
+    border-radius: 2%;
+    box-shadow: 10px 8px 16px 5px rgba(0, 0, 0, 0.567);
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+#work_college4 {
+    display: flex;
+    background-image: url(./../bgallegos8/graphics/pexels-juan-pablo-serrano-arenas-1242348.jpg);
+    /* Photo by Juan Pablo Serrano Arenas: https://www.pexels.com/photo/blurry-image-of-a-brownish-background-1242348/ */
+    background-size: cover;
+    flex-grow: 1;
+    border-radius: 2%;
+    box-shadow: 10px 8px 16px 5px rgba(0, 0, 0, 0.567);
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+#work_college5 {
+    display: flex;
+    background-image: url(./../bgallegos8/graphics/pexels-zaksheuskaya-1568607.jpg);
+    /* Photo by Zaksheuskaya: https://www.pexels.com/photo/blue-abstract-painting-1568607/ */
+    background-size: cover;
+    flex-grow: 1;
+    border-radius: 2%;
+    box-shadow: 10px 8px 16px 5px rgba(0, 0, 0, 0.567);
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+#work_college6 {
+    display: flex;
+    background-image: url(./../bgallegos8/graphics/pexels-ben-mack-6775241.jpg);
+    /* Photo by Ben Mack: https://www.pexels.com/photo/colorful-background-with-glowing-stripes-of-rainbow-6775241/ */
+    background-size: cover;
+    flex-grow: 1;
+    border-radius: 2%;
+    box-shadow: 10px 8px 16px 5px rgba(0, 0, 0, 0.567);
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+#work_college7 {
+    display: flex;
+    background-image: url(./../bgallegos8/graphics/pexels-codioful-\(formerly-gradienta\)-7130472.jpg);
+    /* Photo by Codioful (formerly Gradienta): https://www.pexels.com/photo/colorful-blue-lights-on-abstract-background-7130472/ */
+    background-size: cover;
+    flex-grow: 1;
+    border-radius: 2%;
+    box-shadow: 10px 8px 16px 5px rgba(0, 0, 0, 0.567);
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+.work_child {
+    position: relative;
+    width: fit-content;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    color: rgb(149, 1, 1);
+    text-shadow: 2px 2px 4px #0000007c;
+}  
+
+.work_child_text {
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.work_child_text2 {
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px #ffffff7c;
+}
+
+.work_child_text3 {
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px #ffffff7c;
+}
+
+.work_child_text4 {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px #0000007c;
+}
+
+.work_child_text5 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: left;
+    text-shadow: 2px 2px 4px #0000007c;
+}
+
+.work_child_text6 {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px #0000007c;
+}
+
+.work_child_text7 {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px #ffffff7c;
+}
+
+.work_figcaption1 {
+    font-size: small;
+}
+
+.work_img:hover {
+    scale: 105%;
+}
+
+.work_img {
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 10px;
+    margin: 20px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
 }
 
 
