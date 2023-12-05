@@ -42,6 +42,18 @@ header {
     background-position: center;
 }
 
+#photo_header {
+    background-image: url(../bgallegos8/graphics/pexels-ajay-lobo-1205022.jpg);
+    /* Photo by Ajay Lobo: https://www.pexels.com/photo/canon-dslr-camera-on-table-1205022/  */
+    background-size: cover;
+    background-position: center;
+}
+
+.photo_header_text {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
+}
+
 .coding_header_text {
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 0px rgb(0, 0, 0);

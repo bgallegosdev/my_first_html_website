@@ -1,15 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../bgallegos8_main.css">
     <title>Benjamin Gallegos -- Photo-Gallery</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            padding: 0 5px;
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 25%;
+            /* IE10 */
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 5px;
+        }
+
+        .column img {
+            margin-top: 20px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        .column img:hover {
+            scale: 103%;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 50%;
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+        /* adding css for modal work, referencing w3schools website: https://www.w3schools.com/howto/howto_css_modal_images.asp */
+        .myImages {
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .myImages:hover {
+            opacity: 0.7;
+        }
+
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content (Image) */
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Caption of Modal Image (Image Text) - Same Width as the Image */
+        #caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #ccc;
+            padding: 10px 0;
+            height: 150px;
+        }
+
+        /* Add Animation - Zoom in the Modal */
+        .modal-content,
+        #caption {
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoom {
+            from {
+                transform: scale(0)
+            }
+
+            to {
+                transform: scale(1)
+            }
+        }
+
+        /* The Close Button */
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* 100% Image Width on Smaller Screens */
+        @media only screen and (max-width: 700px) {
+            .modal-content {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-    <header>
+    <header id="photo_header">
         <h1>BENJAMIN GALLEGOS WEBSITE</h1>
+        <h2 class="photo_header_text">Photo-Gallery Studio</h2>
     </header>
 
     <nav>
@@ -33,9 +195,11 @@
             <div class="dropdown">
                 <a href="./../coding_assignments/index.html">CODING ASSINGMENTS</a>
                 <div class="dropdown_content">
-                    <a href="./../../bgallegos8/coding_assignments/index.html#coding_div1">Introduction to Computer Programming Section</a>
+                    <a href="./../../bgallegos8/coding_assignments/index.html#coding_div1">Introduction to Computer
+                        Programming Section</a>
                     <br>
-                    <a href="./../../bgallegos8/coding_assignments/index.html#coding_div4">Beginning Web Programming Section</a>
+                    <a href="./../../bgallegos8/coding_assignments/index.html#coding_div4">Beginning Web Programming
+                        Section</a>
                     <br>
                     <a href="./../../bgallegos8/coding_assignments/index.html#coding_div5">Personal Projects Section</a>
                 </div>
@@ -46,6 +210,175 @@
             <a href="./../about/index.html">ABOUT</a>
         </div>
     </nav>
-    
+
+    <main>
+
+        <!-- modal work, referencing w3schools website: https://www.w3schools.com/howto/howto_css_modal_images.asp  -->
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        <!-- Photo Grid -->
+        <div class="row">
+            <div class="column">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/tetons_bengallegos.jpg"
+                    style="width:100%" alt="Grand Tetons, Wyoming">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/arizona5-tree.jpg"
+                    style="width:100%" alt="Bright Orange Tree, Arizona">
+                <img class="myImages"
+                    src="./../../bgallegos8/graphics/photo_gallery_resized_photos/beach_outlook_oregon_bengallegos.jpg"
+                    style="width:100%" alt="Beach Outlook, Oregon">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/alaska3.jpg" style="width:100%" alt="Alaskan Mountain Image 3, Alaska">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/biltmorecastle2.jpg"
+                    style="width:100%" alt="Biltmore Castle-From Courtyard, North Carolina">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/alaska5.jpg" style="width:100%" alt="Alaskan Mountain Glacier Image 5, Alaska">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/ireland5.jpg" style="width:100%" alt="Trinity College Library - Dublin, Ireland">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/alaska6.jpg" style="width:100%" alt="Hubbard Glacier Image 1, Alaska">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/ireland1.jpg" style="width:100%" alt="Cliffs of Moher Image 1 - Ireland">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/alaska7.jpg" style="width:100%" alt="Hubbard Glacier Image 2, Alaska">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/spain5.jpg" style="width:100%" alt="Royal Palace of Madrid, Spain">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/ireland6.jpg" style="width:100%" alt="St. Patrick's Park - Dublin, Ireland">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/italy1.jpg" style="width:100%" alt="Monastery Steps - Somewhere in Italy">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/jacksonhole1.jpg" style="width:100%" alt="Jackson Hole Valley, Wyoming">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/Z-1.jpg" style="width:100%" alt="Arizona Image 7, Arizona">
+            </div>
+            <div class="column">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/spain6.jpg" style="width:100%" alt="Four Seasons Hotel - Madrid, Spain">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/spain2.jpg" style="width:100%" alt="Spain Sunset from the Capital Steps - Barcelona, Spain">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/arizona1.jpg" style="width:100%" alt="Arizona Image 1, Black & White Structure - Arizona">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/notredam1.jpg" style="width:100%" alt="Notre-Dame - Paris, France *Before Fire">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/Climb-Basilica-of-Santa-Maria-del-Fiore-2.jpg"
+                    style="width:100%" alt="View from the Basilica of Santa Maria del Fiore - Florence, Italy">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/arizona3.jpg" style="width:100%" alt="Arizona Valley, Image 3 - Arizona">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/spain1.jpg" style="width:100%" alt="Madrid Street - Madrid, Spain">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/washingtondc2.jpg"
+                    style="width:100%" alt="Jefferson Memorial - Washington D.C.">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/arizona4.jpg" style="width:100%" alt="Arizona Valley with Sunset, Image 4 - Arizona">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/croatia4.jpg" style="width:100%" alt="View from Klis Fortress - Croatia">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/washingtondc1.jpg"
+                    style="width:100%" alt="Lincoln Memorial, Washington D.C.">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/gallegoslab1b_resized_600x800.jpg"
+                    style="width:100%" alt="Art Structure at the Dublin Castle - Dublin, Ireland">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/grand_teton_shed_bengallegos.jpg"
+                    style="width:100%" alt="Grand Teton's Shed, Wyoming">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/ireland2.jpg" style="width:100%" alt="Cliffs of Moher, Image 2 - Ireland">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/londonstreet1.jpg"
+                    style="width:100%" alt="Busy London Street, London">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/louvre1.jpg" style="width:100%" alt="Louvre - Paris, France">
+            </div>
+            <div class="column">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/arizona6.jpg" style="width:100%" alt="Arizona Path, Image 6 - Arizona">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/spain7.jpg" style="width:100%" alt="Entrance to Parque de El Retiro - Madrid, Spain">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/oregon_beach_town_bengallegos.jpg"
+                    style="width:100%" alt="Oregon Cliffside Beach Houses, Somewhere in Oregon">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/alaska8.jpg" style="width:100%" alt="Alaskan Totem, Image 8 - Alaska">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/basilica1.jpg" style="width:100%" alt="Basilica of Santa Maria del Fiore from the ground - Florence, Italy">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/biltmore_castle_hallway_bengallegos.jpg"
+                    style="width:100%" alt="Biltmore Castle Hallway, Black & White - North Carolina">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/alaska2.jpg" style="width:100%" alt="Hubbard Glacier, Image 2 - Alaska">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/biltmore_gardens_bengallegos.jpg"
+                    style="width:100%" alt="Biltmore Estate Gardens - North Carolina">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/washingtondc3.jpg"
+                    style="width:100%" alt="Martin Luther King Jr. Memorial - Washington D.C.">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/biltmorecastle1.jpg"
+                    style="width:100%" alt="Biltmore Castle, Courtyard Photo Image 2 - North Carolina">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/europe1.jpg" style="width:100%" alt="Riviera - Rome, Italy">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/gallegoslab3a_resized_715x800.jpg"
+                    style="width:100%" alt="Centro Deportivo Municipal Estanque del Retiro - Madrid, Spain">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/croatia7.jpg" style="width:100%" alt="View from Klis Fortress, Image 2 - Croatia">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/ireland4.jpg" style="width:100%" alt="Busy Temple Bar Street - Dublin, Ireland">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/jacksonhole2.jpg" style="width:100%" alt="Jackson Hole River Valley - Wyoming">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/spain3.jpg" style="width:100%" alt="Staircase on Capital Ground - Barcelona, Spain">
+            </div>
+            <div class="column">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/biltmoregarden1.jpg"
+                    style="width:100%" alt="Biltmore Estate Gardens, Image 2 - North Carolina">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/trevifountain1.jpg"
+                    style="width:100%" alt="Trevi Fountain - Rome, Italy">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/arizona2.jpg" style="width:100%" alt="Arizona Mountain Tops, Image 2 - Arizona">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/biltmorelobby.jpg"
+                    style="width:100%" alt="Biltmore Fountain Courtyard Inside the Estate - North Carolina">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/alaska4.jpg" style="width:100%" alt="Alaskan Mountains to Hubbard Glacier, Image 4 - Alaska">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/alaskaglacierwaterfall.jpg"
+                    style="width:100%" alt="Alaskan Waterfall - Alaska">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/Climb-Basilica-of-Santa-Maria-del-Fiore.jpg"
+                    style="width:100%" alt="View from the Basilica of Santa Maria del Fiore - Florence, Italy">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/spain4.jpg" style="width:100%" alt="Spain Alleyway - Madrid, Spain">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/croatia1.jpg" style="width:100%" alt="View from Klis Fortress, Image 3 - Croatia">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/croatia3.jpg" style="width:100%" alt="Klis Fortress, Image 4 - Croatia">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/croatia5.jpg" style="width:100%" alt="View from Klis Fortress, Image 4 - Croatia">
+                <img class="myImages"  src="./../../bgallegos8/graphics/photo_gallery_resized_photos/gulfofalaska_bengallegos.jpg"
+                    style="width:100%" alt="Alaskan Lake and Mountain - Alaska">
+                <img class="myImages" src="./../../bgallegos8/graphics/photo_gallery_resized_photos/ireland3.jpg" style="width:100%" alt="Temple Bar - Dublin, Ireland">
+                <img class="myImages"  src="./../../bgallegos8/graphics/photo_gallery_resized_photos/jacksonhole3.jpg" style="width:100%" alt="Jackson Hole Valley, Image 3 - Wyoming">
+            </div>
+        </div>
+
+        <!-- script for modal, referencing w3schools website https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+        <!-- script also taken from forum on stack overflow, issue solved to add multiple modal images on a page: https://stackoverflow.com/questions/47798971/several-modal-images-on-page -->
+        <script>
+            // create references to the modal...
+            var modal = document.getElementById('myModal');
+            // to all images -- note I'm using a class!
+            var images = document.getElementsByClassName('myImages');
+            // the image in the modal
+            var modalImg = document.getElementById("img01");
+            // and the caption in the modal
+            var captionText = document.getElementById("caption");
+
+            // Go through all of the images with our custom class
+            for (var i = 0; i < images.length; i++) {
+                var img = images[i];
+                // and attach our click listener for this image.
+                img.onclick = function (evt) {
+                    console.log(evt);
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                }
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+        </script>
+
+        <!-- Footer Start -->
+        <footer>
+            <!-- Socials with Icons -->
+            <div class="socials">
+                <a href="https://www.facebook.com/benjamin.gallegos.921/" target="_blank">
+                    <img src="../graphics/facebook.256x256.png" alt="facebook icon" class="icons"
+                        title="Benjamin Gallegos Facebook Account">
+                    <span><a href="https://www.facebook.com/benjamin.gallegos.921/" target="_blank">My Facebook
+                            Page</a></span>
+                </a>
+
+                <!-- Spacing between social icons -->
+                &nbsp;&nbsp;&nbsp;
+
+                <a href="https://www.instagram.com/_bengallegos/" target="_blank">
+                    <img src="../graphics/instagram.256x256.png" alt="instagram icon" class="icons"
+                        title="Benjamin Gallegos Instagram Account">
+                    <span><a href="https://www.instagram.com/_bengallegos/" target="_blank">My Instagram</a></span>
+                </a>
+
+                &nbsp;&nbsp;&nbsp;
+
+                <a href="https://www.linkedin.com/in/benjamin-gallegos-9445b3290/" target="_blank">
+                    <img src="../graphics/linkedin-original.256x256.png" alt="linkedin icon" class="icons"
+                        title="Benjamin Gallegos LinkedIn Account">
+                    <span><a href="https://www.linkedin.com/in/benjamin-gallegos-9445b3290/" target="_blank">My
+                            LinkedIn</a></span>
+                </a>
+
+            </div>
+        </footer>
+
 </body>
+
 </html>
