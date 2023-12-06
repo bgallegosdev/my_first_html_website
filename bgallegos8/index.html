@@ -10,9 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bgallegos8_main.css">
     <title>bgallegos8 Main Page</title>
+
+    <!-- javascript for the photo slide show -->
+    <script type="text/javascript" src="library_event.js"></script>
+    <script type="text/javascript" src="library_slide_show.js"></script>
+    <script type="text/javascript" src="slide_show.js"></script>
 </head>
 
-<body>
+<body id="main_body">
     <!-- Header Start -->
     <header id="main_header">
         <div>
@@ -27,9 +32,9 @@
             <a href="./index.html">HOME</a>
         </div>
 
-        <div class="nav_bar">
+        <!-- <div class="nav_bar">
             RESUME
-        </div>
+        </div> -->
 
         <div class="nav_bar">
             <a href="./photo_gallery/index.html">PHOTO-GALLERY</a>
@@ -43,7 +48,8 @@
             <div class="dropdown">
                 <a href="./coding_assignments/index.html">CODING ASSINGMENTS</a>
                 <div class="dropdown_content">
-                    <a href="./coding_assignments/index.html#coding_div1">Introduction to Computer Programming Section</a>
+                    <a href="./coding_assignments/index.html#coding_div1">Introduction to Computer Programming
+                        Section</a>
                     <br>
                     <a href="./coding_assignments/index.html#coding_div4">Beginning Web Programming Section</a>
                     <br>
@@ -59,31 +65,58 @@
 
     <br>
     <br>
-    <br>
 
     <!-- Main Content, Page 1 -->
     <main id="main_main">
+        <hr id="hr_main">
+        <br>
 
-        <div>
-            <!-- Headshot Photo -->
-            <img class="main_ben_photo" src="graphics/main_ben_photo.jpg" alt="Benjamin Gallegos in Croatia"
-                title="Photo of Benjamin Gallegos in Croatia">
-            <figcaption>*Photo of Benjamin Gallegos in Croatia</figcaption>
-        </div>
         <div class="main_parent1">
-            <p class="main_para1">Welcome to my first webpage! This is a webpage I've learned to create with some basics
-                skills from Beginning Web Development course at <a href="https://www.collin.edu/" target="_blank">Collin
-                    County Community College</a>.
-
-            </p>
+            <div class="main_child">
+                <!-- Headshot Photo -->
+                <img class="main_ben_photo" src="graphics/main_ben_photo.jpg" alt="Benjamin Gallegos in Croatia"
+                    title="Photo of Benjamin Gallegos in Croatia">
+                <figcaption class="work_figcaption1">*Photo of Benjamin Gallegos in Croatia</figcaption>
+            </div>
+            <div class="main_child">
+                <p class="main_para1">Welcome to my first webpage! This is a webpage I've learned to create with some
+                    basics skills from Beginning Web Development course at <a href="https://www.collin.edu/"
+                        target="_blank">Collin County Community College</a>. This site was built using the beginner levels of HTML, CSS, and a small amount of Javascript. 
+                </p>
+                <p class="main_para1">This website is meant to be an introduction to me, my background, and my work portfolio. 
+                </p>
+            </div>
         </div>
+
+        <br>
+        <hr id="hr_main">
+        <br>
+
+        <!-- photo gallery slideshow -->
+        <div class="slide_show_style">
+            <h1>Photo-Gallery Sneak Peak</h1>  
+            <p><img src="images/gear.jpg" id="image" alt=""></p>
+            <p><span id="caption">Photo Gallery Sneak Peak Loading...</span></p>
+            <p>
+                <a href="#" id="play_pause">Pause</a>&nbsp;&nbsp;
+                <a href="#" id="change_speed">Change Speed</a>
+            </p>  
+        </div>
+        <br>
+        <br>
+        <hr id="hr_main">
+        <br>
+        <br>
+        <br>
+        <br>
+
 
         <!-- Sidebar, Main -->
-        <aside>
-            <div>
+        <!-- <aside> -->
+        <!-- <div> -->
 
-            </div>
-        </aside>
+        <!-- </div> -->
+        <!-- </aside> -->
     </main>
 
     <!-- Footer Start -->

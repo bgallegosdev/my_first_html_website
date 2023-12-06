@@ -18,8 +18,9 @@ header {
 }
 
 #main_header {
-    background-image: url(../bgallegos8/graphics/pexels-jeremy-müller-6306297.jpg);
+    background-image: url(../bgallegos8/graphics/pexels-jeremy-muller-6306297.jpg);
     /* Photo by Jeremy Muller: https://www.pexels.com/photo/galaxy-wallpaper-6306297/ */
+    background-position: center;
 }
 
 #coding_header {
@@ -142,8 +143,26 @@ a:active {
 }
 
 
-body {
-    background-color: rgb(184, 207, 238);
+#main_body {
+    background-image: linear-gradient(rgb(184, 207, 238),rgb(220, 231, 232),rgb(184, 207, 238));
+}
+
+#photo_body {
+    /* gradient */
+    background-image: linear-gradient(rgba(240, 220, 186, .85),rgb(186, 220, 240, .50));
+}
+
+#work_body {
+    /* gradient */
+    background-image: linear-gradient(rgba(224, 255, 255, .70),rgb(179, 186, 216, .85));
+}
+
+#coding_body {
+    background-color: black;
+}
+
+#about_body {
+    background-color: rgb(249, 249, 243);
 }
 
 .main_ben_photo {
@@ -177,11 +196,11 @@ body {
     flex-wrap: wrap;
 } */
 
-#main_main {
+/* #main_main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
+} */
 
 #coding_main {
     display: flex;
@@ -197,18 +216,42 @@ body {
 
 .main_para1 {
     /* positioning */
-    position: center;
-    top: 25%;
+    position: relative;
+    top: 10%;
 
     /* text edits */
     font-family: 'Courier New', Courier, monospace;
-    font-size: 2em;
+    font-size: 2.5em;
+    
 
 }
 
 .main_parent1 {
     /* to keep the divs next to eachother */
+    display: flex;
+    flex-grow: 1;
+}
+
+.main_child {
+    flex-grow: 1;
+}
+
+#hr_main {
     width: 75%;
+    height: 5px;
+    border-width: 0;
+    background-color: #B57BF9;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.651);
+}
+
+.slide_show_style {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 3px 3px 4px #0000007c;
+
+    background-color: rgba(152, 170, 231, 0.222);
 }
 
 .socials {
@@ -216,7 +259,7 @@ body {
     justify-content: center;
 
     font-family: 'Courier New', Courier, monospace;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 
     text-shadow: 2px 2px 4px #0000007c;
@@ -225,12 +268,14 @@ body {
 .icons {
     width: 30px;
     height: 30px;
+    padding: 2px;
 }
 
 /* START OF CODING PROJECT PAGE CSS */
 
 .coding_header {
     font-family: 'Courier New', Courier, monospace;
+    color: rgb(15, 255, 80);
 }
 
 .coding_images {
@@ -238,16 +283,18 @@ body {
     height: auto;
     border-style: solid;
     border-width: medium;
-    border-color: black;
+    border-color: rgb(255, 255, 255);
 }
 
 .coding_list {
     font-family: 'Courier New', Courier, monospace;
     font-size: 2em;
+    color: rgb(15, 255, 80);
 }
 .coding_list2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
+    color: rgb(15, 255, 80);
 }
 
 #coding_div1 {
@@ -266,13 +313,14 @@ body {
     order: 7;
     font-family: 'Courier New', Courier, monospace;
     font-size: 2em;
-
+    color: rgb(15, 255, 80);
 }
 
 #coding_div5 {
     order: 8;
     font-family: 'Courier New', Courier, monospace;
     font-size: 2em;
+    color: rgb(15, 255, 80);
 }
 
 .coding_parent1 {
@@ -291,6 +339,7 @@ body {
     /* border-width: 1px;
         border-style: solid;
         border-color: rgba(127, 127, 127, 1); */
+    color: rgb(15, 255, 80);
 }
 
 .coding_parent2 {
@@ -309,6 +358,7 @@ body {
     /* border-width: 1px;
         border-style: solid;
         border-color: rgba(127, 127, 127, 1); */
+    color: rgb(15, 255, 80);
 }
 
 .coding_parent3 {
@@ -327,6 +377,7 @@ body {
     /* border-width: 1px;
         border-style: solid;
         border-color: rgba(127, 127, 127, 1); */
+    color: rgb(15, 255, 80);
 }
 
 .coding_parent4 {
@@ -334,6 +385,7 @@ body {
     width: 50%;
     padding: 25px 25px 25px 25px;
     font-size: 1rem;
+    color: rgb(15, 255, 80);
 }
 
 .coding_para1 {
@@ -343,6 +395,7 @@ body {
     /* text edits */
     font-family: 'Courier New', Courier, monospace;
     font-size: 2rem;
+    color: rgb(15, 255, 80);
 }
 
 /* dropdown menu */
@@ -645,7 +698,16 @@ body {
 
 
 footer {
-    background-color: rgb(125, 173, 239);
+    /* background-color: rgb(125, 173, 239);
     padding: 10px;
-    
+     */
+
+     position: fixed;
+     padding: 10px 10px 0px 10px;
+     bottom: 0;
+     width: 100%;
+     /* Height of the footer*/
+     height: 40px;
+     background-color: rgb(125, 173, 239);
+
 }
