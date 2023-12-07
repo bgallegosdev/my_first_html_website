@@ -398,6 +398,11 @@ a:active {
     color: rgb(15, 255, 80);
 }
 
+table, tr, td {
+    border: 2px solid rgb(15, 255, 80);
+    width: 100%;
+}
+
 /* dropdown menu */
 .dropdown {
     position: relative;
