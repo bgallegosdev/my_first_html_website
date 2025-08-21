@@ -18,33 +18,33 @@ header {
 }
 
 #main_header {
-    background-image: url(../bgallegos8/graphics/pexels-jeremy-muller-6306297.jpg);
+    background-image: url(../docs/graphics/pexels-jeremy-muller-6306297.jpg);
     /* Photo by Jeremy Muller: https://www.pexels.com/photo/galaxy-wallpaper-6306297/ */
     background-position: center;
 }
 
 #coding_header {
-    background-image: url(../bgallegos8/graphics/pexels-pixabay-270366.jpg);
+    background-image: url(../docs/graphics/pexels-pixabay-270366.jpg);
     /* Photo by Pixabay: https://www.pexels.com/photo/html-code-270366/ */
 
 }
 
 #about_header {
-    background-image: url(../bgallegos8/graphics/pexels-min-an-1425146.jpg);
+    background-image: url(../docs/graphics/pexels-min-an-1425146.jpg);
     /* Photo by Min An: https://www.pexels.com/photo/close-up-photo-of-vintage-typewriter-1425146/  */
     background-size: cover;
     background-position: center;
 }
 
 #work_header {
-    background-image: url(../bgallegos8/graphics/pexels-pixabay-258947.jpg);
+    background-image: url(../docs/graphics/pexels-pixabay-258947.jpg);
     /* Photo by Pixabay: https://www.pexels.com/photo/stadium-with-empty-chairs-258947/  */
     background-size: cover;
     background-position: center;
 }
 
 #photo_header {
-    background-image: url(../bgallegos8/graphics/pexels-ajay-lobo-1205022.jpg);
+    background-image: url(../docs/graphics/pexels-ajay-lobo-1205022.jpg);
     /* Photo by Ajay Lobo: https://www.pexels.com/photo/canon-dslr-camera-on-table-1205022/  */
     background-size: cover;
     background-position: center;
@@ -546,7 +546,7 @@ table, tr, td {
 
 #work_college {
     display: flex;
-    background-image: url(./../bgallegos8/graphics/pexels-laura-tancredi-7078712.jpg);
+    background-image: url(./../docs/graphics/pexels-laura-tancredi-7078712.jpg);
     /* Photo by Laura Tancredi: https://www.pexels.com/photo/white-textured-abstract-architectural-wavy-wall-7078712/ */
     background-size: cover;
     flex-grow: 1;
@@ -557,7 +557,7 @@ table, tr, td {
 
 #work_college2 {
     display: flex;
-    background-image: url(./../bgallegos8/graphics/pexels-laura-tancredi-7078502.jpg);
+    background-image: url(./../docs/graphics/pexels-laura-tancredi-7078502.jpg);
     /* Photo by Laura Tancredi: https://www.pexels.com/photo/part-of-geometric-building-with-metallic-wall-7078502/ */
     background-size: cover;
     flex-grow: 1;
@@ -569,7 +569,7 @@ table, tr, td {
 
 #work_college3 {
     display: flex;
-    background-image: url(./../bgallegos8/graphics/pexels-brett-sayles-4857499.jpg);
+    background-image: url(./../docs/graphics/pexels-brett-sayles-4857499.jpg);
     /* Photo by Brett Sayles: https://www.pexels.com/photo/old-brick-wall-with-colorful-paints-in-form-of-rainbow-4857499/ */
     background-size: cover;
     flex-grow: 1;
@@ -581,7 +581,7 @@ table, tr, td {
 
 #work_college4 {
     display: flex;
-    background-image: url(./../bgallegos8/graphics/pexels-juan-pablo-serrano-arenas-1242348.jpg);
+    background-image: url(./../docs/graphics/pexels-juan-pablo-serrano-arenas-1242348.jpg);
     /* Photo by Juan Pablo Serrano Arenas: https://www.pexels.com/photo/blurry-image-of-a-brownish-background-1242348/ */
     background-size: cover;
     flex-grow: 1;
@@ -593,7 +593,7 @@ table, tr, td {
 
 #work_college5 {
     display: flex;
-    background-image: url(./../bgallegos8/graphics/pexels-zaksheuskaya-1568607.jpg);
+    background-image: url(./../docs/graphics/pexels-zaksheuskaya-1568607.jpg);
     /* Photo by Zaksheuskaya: https://www.pexels.com/photo/blue-abstract-painting-1568607/ */
     background-size: cover;
     flex-grow: 1;
@@ -605,7 +605,7 @@ table, tr, td {
 
 #work_college6 {
     display: flex;
-    background-image: url(./../bgallegos8/graphics/pexels-ben-mack-6775241.jpg);
+    background-image: url(./../docs/graphics/pexels-ben-mack-6775241.jpg);
     /* Photo by Ben Mack: https://www.pexels.com/photo/colorful-background-with-glowing-stripes-of-rainbow-6775241/ */
     background-size: cover;
     flex-grow: 1;
@@ -617,7 +617,7 @@ table, tr, td {
 
 #work_college7 {
     display: flex;
-    background-image: url(./../bgallegos8/graphics/pexels-codioful-\(formerly-gradienta\)-7130472.jpg);
+    background-image: url(./../docs/graphics/pexels-codioful-\(formerly-gradienta\)-7130472.jpg);
     /* Photo by Codioful (formerly Gradienta): https://www.pexels.com/photo/colorful-blue-lights-on-abstract-background-7130472/ */
     background-size: cover;
     flex-grow: 1;
