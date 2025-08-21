@@ -18,7 +18,7 @@ header {
 }
 
 #main_header {
-    background-image: url(../docs/graphics/pexels-jeremy-muller-6306297.jpg);
+    background-image: url(./docs/graphics/pexels-jeremy-muller-6306297.jpg);
     /* Photo by Jeremy Muller: https://www.pexels.com/photo/galaxy-wallpaper-6306297/ */
     background-position: center;
 }
